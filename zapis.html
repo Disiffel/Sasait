@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+        <a href="index.html"><img src="image/nav.png" class="dota2"></a>
+        <a class="courses">Курсы</a>
+        <a class="teacher">Наставники</a>
+        <a href="review.html" class="navreview">Отзывы</a>
+        <a class="contackt">Контакты</a>
+        <img src="image/guest.png" class="guest" onclick="openPopup()">
+    </nav>
+    <div class="Popup">
+        <button onclick="closePopup()">Закрыть</button>
+        <button onclick="openReg()">Зарегестрироваться</button>
+        <button onclick="openAvtor()">Войти</button>
+    </div>
+    <div class="Avtor">
+        <button onclick="closeAvtor()">Закрыть</button>
+        <div class="AvtorDiv">
+            Введите ваш логин
+            <input type="text" required placeholder="Введите ваше имя пользователя">
+            Введите ваш пароль
+            <input type="text" required placeholder="Введите вашу пароль">
+        </div>
+        <button onclick="avtor()">Войти</button>
+    </div>
+    <div class="Reg">
+        <button onclick="closeReg()">Закрыть</button>
+        <div class="RegDIv">
+            Имя пользователя:
+            <input type="text" required placeholder="Введите ваше имя пользователя">
+            Электронная почта:
+            <input type="text" required placeholder="Введите вашу электронную почту">
+            Пароль:
+            <input type="text" required placeholder="Введите пароль">
+            Подтверждение пароля:
+            <input type="text" required placeholder="Подтвердите пароль">
+        </div>
+        <button onclick="reg()">Регистрация</button>
+    </div>
+    <form action="" method="get" class="form-example">
+        <div class="zapisForm">
+            <p>Спасибо что доверились нам</p>
+            <br>Будем рады видеть вас на вашем первом занятии
+            <div class="zapisInputText">
+                <br>Введите ваше имя:
+                <br><input type="text" required placeholder="Введите ваше имя">
+                <br>Введите вашу почту:
+                <br><input type="text" required placeholder="Введите вашу почту">
+                <br>Введите ваш номер телефона:
+                <br><input type="text" required placeholder="Введите ваш номер телефона">
+            </div>
+            <button>Записаться</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

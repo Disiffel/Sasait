@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="image/nav.png" class="dota2"></a>
+        <a class="courses">Курсы</a>
+        <a class="teacher">Наставники</a>
+        <a href="review.html" class="navreview">Отзывы</a>
+        <a class="contackt">Контакты</a>
+        <img src="image/guest.png" class="guest" onclick="openPopup()">
+    </nav>
+    <div class="Popup">
+        <button onclick="closePopup()">Закрыть</button>
+        <button onclick="openReg()">Зарегестрироваться</button>
+        <button onclick="openAvtor()">Войти</button>
+    </div>
+    <div class="Avtor">
+        <button onclick="closeAvtor()">Закрыть</button>
+        <div class="AvtorDiv">
+            Введите ваш логин
+            <input type="text" required placeholder="Введите ваше имя пользователя">
+            Введите ваш пароль
+            <input type="text" required placeholder="Введите вашу пароль">
+        </div>
+        <button onclick="avtor()">Войти</button>
+    </div>
+    <div class="Reg">
+        <button onclick="closeReg()">Закрыть</button>
+        <div class="RegDIv">
+            Имя пользователя:
+            <input type="text" required placeholder="Введите ваше имя пользователя">
+            Электронная почта:
+            <input type="text" required placeholder="Введите вашу электронную почту">
+            Пароль:
+            <input type="text" required placeholder="Введите пароль">
+            Подтверждение пароля:
+            <input type="text" required placeholder="Подтвердите пароль">
+        </div>
+        <button onclick="reg()">Регистрация</button>
+    </div>
+    <div class="review">
+        <p>Отзывы наших учеников</p>
+        <br>Мы гордимся тем, что можем 
+        помочь игрокам всех уровней улучшить свои навыки в Dota 2. 
+    </div>
+    <div class="seventh_div">
+        <div class="seventh_main1">
+            <div class="seventh_main11">
+                <div class="reviewsStar">
+                    <p><div class="stars">★★★★</div>★</p>
+                </div>
+                <div class="reviews">
+                    <p>Александр К.</p>
+                    "Я начал играть в Dota 2 совсем недавно и не
+                    знал, с чего начать. Курс «Основы Dota 2» стал
+                    для меня настоящим открытием! Наставник
+                    объяснил все нюансы игры, и теперь я
+                    чувствую себя уверенно на поле боя.
+                    Рекомендую всем новичкам!"
+                </div>
+            </div>
+            <div class="seventh_main12">
+                <p class="stars">★★★★★</p>
+                <div class="reviews">
+                    <p>Мария С.</p>
+                    "Курс «Продвинутые стратегии» помог мне
+                    поднять свой MMR на 1000 пунктов всего за
+                    месяц! Я научилась правильно анализировать
+                    свои игры и делать выводы. Большое спасибо
+                    моему наставнику за поддержку и советы!"
+                </div>
+            </div>
+        </div>
+        <div class="seventh_main2">
+            <div class="seventh_main21">
+                <p class="stars">★★★★★</p>
+                <div class="reviews">
+                    <p>Дмитрий П.</p>
+                    "Я уже играл в Dota 2 несколько лет, но всегда
+                    хотел улучшить свои навыки на позиции
+                    саппорта. Курс «Мастерство на позиции»
+                    оказался именно тем, что мне нужно! Теперь я
+                    лучше понимаю свою роль в команде и как
+                    взаимодействовать с керри."
+                </div>
+            </div>
+            <div class="seventh_main22">
+                <div class="reviewsStar">
+                    <p><div class="stars">★★★★</div>★</p>
+                </div>
+                <div class="reviews">
+                    <p>Екатерина Л.</p>
+                    "Командный курс был просто великолепен! Мы
+                    с друзьями записались вместе, и это было
+                    отличное решение. Мы научились работать как
+                    единое целое, а также разработали
+                    собственные стратегии для матчей. Теперь мы
+                    играем гораздо лучше!"
+                </div>
+            </div>
+        </div>
+        <div class="seventh_main3">
+            <div class="seventh_main31">
+                <p class="stars">★★★★★</p>
+                <div class="reviews">
+                    <p>Игорь Т.</p>
+                    "Индивидуальные занятия с наставником
+                    помогли мне разобраться в сложных аспектах
+                    игры, которые я не мог понять сам. Я получил
+                    много полезных советов и теперь чувствую
+                    себя более уверенно в матчах."
+                </div>
+            </div>
+            <div class="seventh_main32">
+                <div class="reviewsStar">
+                    <p><div class="stars">★★★★</div>★</p>
+                </div>
+                <div class="reviews">
+                    <p>Сергей М.</p>
+                    "Я всегда считал себя средним игроком, но
+                    после прохождения курса «Командная игра и
+                    тактика» я понял, что могу гораздо больше!
+                    Уроки по взаимодействию с командой и
+                    разработке стратегий помогли мне не только
+                    улучшить свою игру, но и стать лидером в
+                    команде."
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="" method="get" class="form-example">
+        <div class="reviewForm">
+            <div class="reviewInputText">
+                <p>Оставьте ваш отзыв</p>
+                <br>Введите ваше имя:
+                <br><input type="text" required placeholder="Введите ваше имя">
+                <br>Введите ваш отзыв:
+                <br><input type="text" required placeholder="Введите ваш отзыв">
+            </div>
+            <div class="reviewInputStars">
+                <div class="star0" onclick="setstar0()">★</div>
+                <div class="star1" onclick="setstar1()">★</div>
+                <div class="star2" onclick="setstar2()">★</div>
+                <div class="star3" onclick="setstar3()">★</div>
+                <div class="star4" onclick="setstar4()">★</div>
+            </div>
+            <div class="reviewButton">
+                <button onclick="review()">Опубликовать</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
