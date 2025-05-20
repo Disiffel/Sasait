@@ -399,12 +399,15 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
-    /* .courses, .teacher, .contackt, .navreview {
-        margin: 0 2% 0 2%;
-    } */
     /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
+}
+.menu__box li {
+    padding: 5% 0 5% 0;
+}
+.dota2, .guest {
+    margin: 0 0 0 0;
 }
 /* стилизуем кнопку */
 .menu__btn {
@@ -426,7 +429,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: #434343;
 }
 .menu__btn > span::before {
   content: '';
@@ -449,14 +452,14 @@ nav {
   padding: 80px 0;
   list-style: none;
   text-align: center;
-  background-color: #555555;
+  background-color: #3a3a3a;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 /* элементы меню */
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
+  color: #434343;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -490,9 +493,15 @@ nav {
         display: block;
         width: 100%;
     }
-    .sixth_div {
+    .sixth_div, .third_div {
         width: 100%;
         padding: 0 0 0 0;
+    }
+    .fourth_div {
+        padding: 0 5% 0 5%;
+    }
+    .fourth_div_main {
+        width: 80%;
     }
     .fifth_div {
         width: 90%;
@@ -507,5 +516,9 @@ nav {
     .seventh_main11, .seventh_main12, .seventh_main21, .seventh_main22, .seventh_main31, .seventh_main32 {
         width: 100%;
     }
-
+    .Popup, .Avtor, .Reg {
+        top: 50%;
+        left: 50%;
+    }
 }
+
