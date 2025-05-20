@@ -20,7 +20,11 @@ nav {
     background-repeat: no-repeat;
 }
 
-.menu-list {
+nav input {
+    display: none;
+}
+
+.menu__box {
     list-style-type: none;
     overflow: hidden;
     position: fixed;
@@ -34,17 +38,13 @@ nav {
     background-repeat: no-repeat;
 }
 
-.burger-checkbox, .burger {
-    display: none;
-}
-
 .courses, .teacher, .contackt, .navreview {
     padding: 0;
     text-decoration: none;
     color: white;
 }
 
-.menu-list li {
+.menu__box li {
     margin: 0 4% 0 4%;
 }
 
@@ -143,30 +143,26 @@ nav {
     padding: 0 15% 0 15%;
 }
 
-.first_div_main1 {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 13% 2% 13%;
+.first_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5% 0 13% 0;
 }
 
-.first_div_main12, .first_div_main22 {
-    padding: 0 2% 0 2%;
+.second_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5% 0 0 0;
 }
 
-.first_div_main2 {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 13% 2% 13%;
+.second_div_main21 {
+    grid-column-start: 1;
 }
 
-.second_div_main2, .second_div_main1 {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 0 2% 0;
-}
-
-.second_div_main1, .second_div_main2 {
-    padding: 0 13% 0 13%;
+.second_div_main22 {
+    grid-column-start: 3;
 }
 
 .third_div_main1 {
@@ -392,10 +388,58 @@ nav {
 
 
 
-@media screen and (max-width: 1368px) {
-    .courses, .teacher, .contackt, .navreview {
-        margin: 0 3% 0 3%;
+@media screen and (max-width: 1024px) {
+    .menu__box li {
+        width: 15%;
+        margin: 0 2% 0 2%;
     }
+    .menu__box {
+        padding: 0 0 0 0;
+    }
+    .first_div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .second_div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 5% 0 13% 0;
+    }
+    .second_div_main21 {
+        grid-column-start: 2;
+    }
+    .second_div_main22 {
+        grid-column-start: 1;
+    }
+    .third_div {
+        padding: 0 10% 5% 10%;
+    }
+    .fourth_div {
+        padding: 0 10% 5% 10%;
+    }
+    .fourth_div_main {
+        width: 80%;
+    }
+    .fifth_div {
+        padding: 0 5% 5% 5%;
+    }
+    .sixth_div {
+        padding: 0 5% 5% 5%;
+    }
+    .reviewForm {
+        margin: 5% 25% 5% 25%;
+        width: 50%;
+    }
+    .zapisForm {
+        padding: 15% 25% 5% 25%;
+        width: 50%;
+    }
+    .seventh_div {
+        padding: 5% 10% 5% 10%;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -520,5 +564,16 @@ nav {
         top: 50%;
         left: 50%;
     }
+    .reviewForm {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+    .reviewButton {
+        width: 100%;
+        
+    }
+    .zapisForm {
+        padding: 20% 5% 0 5%;
+        width: 90%;
+    }
 }
-
