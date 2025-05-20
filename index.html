@@ -8,12 +8,16 @@
 </head>
 <body>
     <nav>
-        <a href="index.html"><img src="image/nav.png" class="dota2"></a>
-        <a class="courses">Курсы</a>
-        <a class="teacher">Наставники</a>
-        <a href="review.html" class="navreview">Отзывы</a>
-        <a class="contackt">Контакты</a>
-        <img src="image/guest.png" class="guest" onclick="openPopup()">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger"></label>
+        <ol class="menu-list">
+            <li><a href="index.html"><img src="image/nav.png" class="dota2"></a></li>
+            <li><a class="courses">Курсы</a></li>
+            <li><a class="teacher">Наставники</a></li>
+            <li><a href="review.html" class="navreview">Отзывы</a></li>
+            <li><a class="contackt">Контакты</a></li>
+            <li><img src="image/guest.png" class="guest" onclick="openPopup()"></li>
+        </ol>
     </nav>
     <div class="Popup">
         <button onclick="closePopup()">Закрыть</button>
