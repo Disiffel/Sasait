@@ -195,7 +195,7 @@ const drive = document.querySelector('.sixth_div');
 const button1 = document.querySelector('.teacher');
 const drive1 = document.querySelector('.fifth_div');
 const button2 = document.querySelector('.contackt');
-const drive2 = document.querySelector('.conta');
+const drive2 = document.querySelector('footer');
 
 button.addEventListener('click' , e => {
   drive.scrollIntoView({

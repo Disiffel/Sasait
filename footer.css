@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 3% 25% 0 25%;
+    background-color: white;
+    text-align: left;
+}
+
+body img {
+    padding: 0 40% 0 40%;
+    width: 20%;
+    height: 20%;
+}
+
+.head {
+    text-align: center;
+    font-size: 52px;
+}
+
+.start {
+    font-size: 42px;
+}
+
+.head1 {
+    font-size: 52px;
+}
+
+.conf {
+    font-size: 32px;
+}
+
+.conf b{
+    font-size: 42px;
+}
+
+.polz {
+    font-size: 32px;
+}
+
+.polz b{
+    font-size: 42px;
+}
+
+.footer_main1 a, .footer_main2 a {
+    color: white;
+}
